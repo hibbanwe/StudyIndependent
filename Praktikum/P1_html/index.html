@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibban Web</title>
+    <link rel="icon" type="image/png" href="image/5370c88d-5126-414e-9cf7-c91b69d781f7.jfif">
+    <style>
+        body {
+            font-family: 'Trirong', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #94FFD8, #A3D8FF); /* Gradasi dari pink lembut ke biru muda pastel */
+            background-attachment: fixed; /* Membuat background tetap ketika scrolling */
+            color: #333; /* Warna teks agar lebih lembut dan kontras */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #FF76CE;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Styling untuk tombol Login dan Register */
+        .header-buttons {
+            display: flex;
+        }
+
+        .header-buttons a {
+            padding: 0.5rem 1rem;
+            margin-left: 10px;
+            border-radius: 5px;
+            background-color: #FDFFC2;
+            color: #060606;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        .header-buttons a:hover {
+            background-color: #030303;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Section and Layout */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        .profile {
+            max-width: 20px;
+            margin-right: 10px;
+        }
+
+        /* Description Styling */
+        .description {
+            max-width: 500px;
+            background-color: #FDFFC2;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 15px rgba(251, 4, 4, 0.8);
+            margin-bottom: 80px; /* Jarak dari footer */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        .description:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(251, 4, 4, 0.8);
+        }
+
+        /* Image Styling */
+        .description img {
+            border-radius: 10px;
+            width: 50%; /* Mengubah ukuran gambar menjadi sedang */
+            height: auto;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .description img:hover {
+            transform: scale(1.05); /* Membesarkan sedikit saat hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #FF76CE;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-buttons {
+                margin-top: 1rem;
+            }
+
+            .description {
+                max-width: 90%; /* Menyesuaikan ukuran pada perangkat kecil */
+                margin-right: 0;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .description img {
+                width: 80%; /* Mengubah ukuran gambar pada perangkat kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hibban's Web</h1>
+        <!-- Tambahkan tombol Login dan Register -->
+        <div class="header-buttons">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </header>
+    <section>
+        <!-- Deskripsi di sebelah kanan -->
+        <div class="description">
+            <img src="image/kailaa.jpeg" alt="Foto Kailaa">
+            <h2><b>Kailaa Cantikkks</b></h2>
+            <p><i>Lorem ipsum dolor sit amet</i>, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.<u>Praesent mauris.</u> Fusce nec tellus sed augue semper porta.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hibban Web. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="icon" type="image/png" href="image/5370c88d-5126-414e-9cf7-c91b69d781f7.jfif">
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="#" method="post">
+        <!-- Nama lengkap dengan autocomplete -->
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukan nama lengkap" autocomplete="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Masukan email" required><br><br>
+
+        <!-- Nomor Telepon -->
+        <label for="number">Nomor Telepon:</label><br>
+        <input type="tel" id="number" name="number" placeholder="Masukan nomor telepon" required><br><br>
+
+        <!-- Negara ASEAN -->
+        <label for="negara">Negara:</label><br>
+        <select id="negara" name="negara" required>
+            <option value="" disabled selected>Pilih negara</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapura">Singapura</option>
+            <option value="thailand">Thailand</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="filipina">Filipina</option>
+            <option value="laos">Laos</option>
+            <option value="kamboja">Kamboja</option>
+            <option value="brunei">Brunei</option>
+            <option value="myanmar">Myanmar</option>
+            <option value="timor_leste">Timor Leste</option>
+        </select><br><br>
+
+        <!-- Checkbox syarat dan ketentuan -->
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Saya setuju dengan syarat dan ketentuan</label><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Masukan password" minlength="8" maxlength="20" required>
+        <br><br>
+
+        <!-- Textarea Komentar -->
+        <textarea id="komentar" name="komentar" rows="5" cols="40" placeholder="Tuliskan komentar Anda..."></textarea>
+        <br><br>
+
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>

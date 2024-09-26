@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Tiket Travel</title>
+    <link rel="icon" type="image/png" href="image/zoro.jpg">
+</head>
+<body>
+
+    <h1>Form Pemesanan Tiket Travel</h1>
+
+    <form action="#" method="post">
+        <!-- Nama lengkap -->
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukan nama lengkap" autocomplete="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Masukan email" required><br><br>
+
+        <!-- Nomor Telepon -->
+        <label for="number">Nomor Telepon:</label><br>
+        <input type="tel" id="number" name="number" placeholder="Masukan nomor telepon" required><br><br>
+
+        <!-- Pilihan Jenis Tiket (One-way atau Round-trip) -->
+        <label for="jenis_tiket">Jenis Tiket:</label><br>
+        <input type="radio" id="oneway" name="jenis_tiket" value="oneway" required>
+        <label for="oneway">One-way</label>
+        <input type="radio" id="roundtrip" name="jenis_tiket" value="roundtrip">
+        <label for="roundtrip">Round-trip</label><br><br>
+
+        <!-- Kota Keberangkatan -->
+        <label for="kota_asal">Kota Keberangkatan:</label><br>
+        <input type="text" id="kota_asal" name="kota_asal" placeholder="Masukan kota keberangkatan" required><br><br>
+
+        <!-- Kota Tujuan -->
+        <label for="kota_tujuan">Kota Tujuan:</label><br>
+        <input type="text" id="kota_tujuan" name="kota_tujuan" placeholder="Masukan kota tujuan" required><br><br>
+
+        <!-- Kelas Tiket -->
+        <label for="rute_perjalanan">Rute Perjalan:</label><br>
+        <select id="rute_perjalanan" name="rute_perjalanan" required>
+            <option value="" disabled selected>Pilih Rute perjalanan</option>
+            <option value="cipularang">Cipularang</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="cikampek">Cikampek</option>
+            <option value="pantura">Pantura</option>
+        </select><br><br>
+
+        <!-- Tanggal Keberangkatan -->
+        <label for="tanggal_keberangkatan">Tanggal Keberangkatan:</label><br>
+        <input type="date" id="tanggal_keberangkatan" name="tanggal_keberangkatan" required><br><br>
+
+        <!-- Jumlah Penumpang -->
+        <label for="jumlah_penumpang">Jumlah Penumpang:</label><br>
+        <input type="number" id="jumlah_penumpang" name="jumlah_penumpang" min="3" max="10" required><br><br>
+
+        <!-- Kelas Tiket -->
+        <label for="kelas_tiket">Kelas Tiket:</label><br>
+        <select id="kelas_tiket" name="kelas_tiket" required>
+            <option value="" disabled selected>Pilih kelas tiket</option>
+            <option value="ekonomi">Ekonomi</option>
+            <option value="bisnis">Bisnis</option>
+            <option value="executive">Executive</option>
+            <option value="first_class">First Class</option>
+        </select><br><br>
+
+        <!-- Metode Pembayaran -->
+        <label for="pembayaran">Metode Pembayaran:</label><br>
+        <select id="pembayaran" name="pembayaran" required>
+            <option value="" disabled selected>Pilih metode pembayaran</option>
+            <option value="kartu_kredit">Kartu Kredit</option>
+            <option value="transfer_bank">Transfer Bank</option>
+            <option value="e_wallet">E-Wallet</option>
+        </select><br><br>
+
+        <!-- Checkbox Syarat dan Ketentuan -->
+        <input type="checkbox" id="syarat" name="syarat" required>
+        <label for="syarat">Saya setuju dengan syarat dan ketentuan</label><br><br>
+
+        <input type="submit" value="Pesan Tiket">
+
+    </form>
+
+</body>
+</html>

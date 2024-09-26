@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <form action="#" method="post">
+            <!-- Nama Lengkap -->
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" minlength="3" required placeholder="Nama Lengkap">
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email Anda">
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Password">
+
+            <!-- Tanggal Lahir -->
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Umur -->
+            <label for="age">Umur:</label>
+            <input type="number" id="age" name="age" min="18" required placeholder="Minimal 18 tahun">
+
+            <!-- Jenis Kelamin -->
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="Laki-laki" required>
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="Perempuan" required>
+            <label for="female">Perempuan</label>
+
+            <!-- Nomor Telepon -->
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required placeholder="Nomor Telepon (10-13 angka)">
+
+            <!-- Persetujuan Syarat dan Ketentuan -->
+            <label>
+                <input type="checkbox" id="terms" name="terms" required> Saya menyetujui syarat dan ketentuan
+            </label>
+
+            <!-- Tombol Submit -->
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
