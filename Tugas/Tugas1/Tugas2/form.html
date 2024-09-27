@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    
+    <!-- Pemanggilan untuk CSS Eksternal -->
+    <link rel="stylesheet" href="form.styled.css">
+
+    
+    <!-- Pemanggilan untuk CSS Internal -->
+    <style>
+        #submit-btn {
+            background-color: #0f20db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        #submit-btn:hover {
+            background-color: #06b5bb;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/5370c88d-5126-414e-9cf7-c91b69d781f7.jfif">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #4F75FF; font-family: Arial, sans-serif;">Form Pendaftaran</h2> <!-- Pemanggilan CSS Inline -->
+        <form action="#" method="post">
+            
+            <label for="name" class="form-label">Nama Lengkap:</label> <!-- Selector Class -->
+            <input type="text" id="name" name="name" minlength="3" required placeholder="Nama Lengkap">
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email Anda">
+
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Password">
+
+            <label for="dob" class="form-label">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="age" class="form-label">Umur:</label>
+            <input type="number" id="age" name="age" min="18" required placeholder="Minimal 18 tahun">
+
+            <label class="form-label">Jenis Kelamin:</label>
+            <div class="gender-options"> <!-- Selector Class -->
+                <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                <label for="female">Perempuan</label>
+            </div>
+
+            <label for="phone" class="form-label">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required placeholder="Nomor Telepon (10-13 angka)">
+
+            <label class="form-label">
+                <input type="checkbox" id="terms" name="terms" required> Saya menyetujui syarat dan ketentuan
+            </label>
+
+            <!-- Tombol Submit dengan ID Selector -->
+            <button type="submit" id="submit-btn">Daftar</button> <!-- Selector ID -->
+        </form>
+    </div>
+</body>
+</html>
